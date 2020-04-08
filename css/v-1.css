@@ -1,0 +1,160 @@
+@charset "utf-8";
+/* CSS Document */
+/*这个是白色字体部分*/
+/*滚动画面部分*/
+#sub{
+
+	width: 1275px;
+	height: 480px;
+	margin-top: 80px;
+
+}
+/*滚动下选择栏框架*/
+#sub-top{
+	width: 1120px;
+	height: 91px;
+	margin: 0 auto;
+	margin-left: 85px;
+	border-bottom: 2px solid rgb(241,241,241);
+	z-index: 2;
+}
+#sub-top .sub-top1{
+	width: 202px;
+	height: 90px;
+}
+#sub-top .sub-top1 a{
+	text-align: center;
+	color: #666;
+	font-size: 18px;
+	font-weight: 400;
+/*	margin: 0 auto;*/
+	margin-left: 42px;
+	line-height: 90px;
+text-decoration: none;
+}
+#sub-top .sub-top2{
+	width: 807px;
+	height: 90px;
+	position: relative;
+	bottom: 93px;
+	left: 202px;
+}
+#sub-top .sub-top2 img{
+	margin-top: 22px;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+#sub-top .sub-top3{
+	width: 68px;
+	height: 90px;
+	position: relative;
+	bottom: 185px;
+	left: 1010px;
+}
+#sub-top .sub-top3 a{
+	text-decoration: none;
+	color: #666;
+	line-height: 90px;
+	font-size: 14px;
+}
+#sub-top-home-logo4:hover{
+	text-decoration:underline #666;
+	border-bottom: 1px solid #666;
+}
+
+
+/*推荐课程大框架*/
+#sub-kecheng{
+	height: 475px;
+	width: 1120px;
+	margin-left: 85px;
+/*	border:1px solid red;*/
+}
+/*顶部框架*/
+#sub-kecheng .a1{
+	height: 36px;
+	width: 1120px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+#sub-kecheng .a1 .a1-1{
+font-size: 24px;
+font-weight: 400;
+color: #404040;
+}
+#sub-kecheng .a1 .a1-2{
+width: 42px;
+height: 28px;
+border: 1px solid #ccc;
+display: inline-block;
+float: right;
+}
+#sub-kecheng .a1 .a1-2 a{
+text-align: center;
+line-height: 28px;
+cursor: pointer;
+color: #888;
+text-decoration: none;
+position: relative;
+left: 15px;
+font-size: 16px;
+}
+/*下部框架*/
+#sub-kecheng .a2{
+	width: 1140px;
+	height: 320px;
+}
+/*分区域块框架*/
+#sub-kecheng .a2 .a3{
+	width: 263px;
+	height: 320px;
+	margin-right: 15px;
+	margin-bottom: 15px;
+	float: left;
+	border:1px solid rgb(230,230,230);
+}
+/*浮动效果*/
+.a3:hover{
+            transition:border linear .2s,
+					box-shadow linear .5s;
+		box-shadow:5px 5px 10px rgba(0,0,0,.3);
+}
+/*图片格式*/
+#sub-kecheng .a2 .a3 .a4{
+	width: 263px;
+	height: 210px;
+}
+/*字体包含框架*/
+#sub-kecheng .a2 .a3 .a5{
+ padding-left: 15px;
+ padding-right: 15px;
+ padding-top:10px;
+ width: 233px;
+ height: 90px;
+}
+/*第一行字体*/
+#sub-kecheng .a2 .a3 .a5 .a6{
+color: #404040;
+font-size: 15px;
+font-weight: 400;
+height: 18px;
+width: 233px;
+top: 10px;
+position: relative;
+}
+/*第二行字体框架*/
+#sub-kecheng .a2 .a3 .a5 .a7{
+width: 233px;
+height: 22px;
+margin-top: 12px;
+}
+#sub-kecheng .a2 .a3 .a5 .a7-1{
+   color: #999;
+   font-size: 12px;
+}
+#sub-kecheng .a2 .a3 .a5 .a7-2{
+	color: #999;
+    font-size: 12px;
+    line-height: 18px;
+}
+

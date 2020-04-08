@@ -1,0 +1,188 @@
+@charset "utf-8";
+#bg{
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background: rgba(200,200,200,0.8);
+				 display: none; 
+				 z-index: 999;
+			}
+#ToNewMain{
+				position:absolute;
+  				left:50%;
+  				top:50%;
+  				margin-left:-300px;
+  				margin-top:-250px;
+				width: 600px;
+				height: 500px;
+				background: #fff;
+				/* cursor:move; */
+			}
+			/*关闭*/
+.X{
+				padding: 10px;
+				float: right;
+				cursor: pointer;
+			}
+.typing {
+				padding-left: 10px;
+				padding-right: 10px;
+				margin-left: 30%;
+				background-color: white;
+				margin-top: -11px;
+				font-size: 22px;.
+				font-family: "黑体";
+				width: 7em;
+				white-space: nowrap;
+				border-right: 2px solid transparent;
+				/*animation: typing 3.5s steps(7, end), blink-caret .75s step-end infinite;*/
+				overflow: hidden;
+			}	
+.major{
+				width: 450px;
+				height: 300px;
+				margin: auto;
+				margin-top: 60px;
+				cursor: default;
+				border-top: 1px solid #888888;
+				display: none;
+}
+
+.LoginText{
+	width: 375px;
+	height: 35px;
+	margin: 10px auto 5px 25px;
+}
+.logining{
+	width: 225px;
+	height: 35px;
+	margin: 10px auto 5px 115px;
+}
+.remember{
+	width: 90px;
+	height: 35px;
+	float: right;
+	line-height: 35px;
+	margin: 25px auto 25px auto;
+}
+.checkbox{
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+}
+.forget{
+	width: auto;
+	margin-top: 40px;
+	margin-left: 10px;
+	font-size: 14px;
+	line-height: 30px;
+	height: 30px;
+	float: left;
+}
+.notlogin{
+	width: auto;
+	margin-top: 40px;
+	margin-left: 10px;
+	font-size: 14px;
+	line-height: 30px;
+	height: 30px;
+	float: left;
+	color: #0B99FF;
+}
+.tiaokuang1{
+	margin-top: 150px;
+	width: 100%;
+	text-align:center;
+	float: left;
+	font-size: 14px;
+	font-family: "黑体";
+}
+
+.verification{
+	width: 30%;
+	height: 35px;
+	float: left;
+	margin-left: 25px;
+	margin-top: 10px;
+}
+.registercode{
+	margin-top: 20px;
+	width:20%;
+	height: 40px;
+	margin-left: 20%;
+	line-height: 40px;
+	float: left;
+	border: cornflowerblue 1px solid;
+	text-align: center;
+	font-family:Arial;
+    font-style:italic;
+    color:blue;
+    font-size:30px;
+}
+.registercodename{
+	font-family: "黑体";
+	line-height: 70px;
+	font-size: 14px;
+	margin-top: 20px;
+	width:auto;
+	height: 40px;
+	float: left;
+	/*border: red 1px solid;*/
+}
+.vering{
+	width: 225px;
+	height: 35px;
+	margin: 10px auto 5px 115px;
+}
+.notver{
+	width: 100%;
+	font-size: 14px;
+	line-height: 30px;
+	height: 30px;
+	float: left;
+	text-align: right;
+	color: #0B99FF;	
+}
+.tiaokuangname{
+	width: auto;
+	margin-top: 10px;
+	margin-left: 10px;
+	font-size: 14px;
+	line-height: 30px;
+	height: 30px;
+	float: left;
+}
+.tiaokuang2{
+	line-height: 30px;
+	margin-top: 10px;
+	width: auto;
+	text-align:center;
+	float: left;
+	font-size: 14px;
+	font-family: "黑体";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

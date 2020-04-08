@@ -1,0 +1,91 @@
+@charset "utf-8";
+
+.active{
+	border-bottom: 3px solid #12a754;
+	color: #12a754;
+}
+#box{
+	height: 620px;
+	width: 1120px;
+	margin-right: 85px;
+	margin-left: 85px;
+    background-color: #fff;
+    display: block;
+}
+#box div{
+	height: 620px;
+	width: 1120px;
+	display: none;
+}
+
+#u1{
+	margin-top: 150px;
+	height: 60px;
+	width: 1120px;
+	margin-right: 85px;
+	margin-left: 85px;
+	border-bottom: 1px solid #e6e6e6;
+    background-color: #fff;
+}
+/*课程介绍*/
+#u1-1{
+	float: left;
+	height: 58px;
+width: 75px;
+margin-bottom: -1px;
+position: relative;
+margin-left: 25px;
+font-size: 18px;
+}
+
+
+/*章节目录*/
+#u2-1{
+	float: left;
+	height: 58px;
+width: 75px;
+margin-bottom: -1px;
+position: relative;
+margin-left: 25px;
+font-size: 18px;
+}
+
+
+
+/*考核标准*/
+#u3-1{
+	float: left;
+	height: 58px;
+width: 75px;
+margin-bottom: -1px;
+position: relative;
+margin-left: 25px;
+font-size: 18px;
+}
+
+
+
+/*教学计划*/
+#u4-1{
+	float: left;
+	height: 58px;
+width: 75px;
+margin-bottom: -1px;
+position: relative;
+margin-left: 25px;
+font-size: 18px;
+}
+
+
+
+/*认证情况*/
+#u5-1{
+	float: left;
+	height: 58px;
+width: 75px;
+margin-bottom: -1px;
+position: relative;
+margin-left: 25px;
+font-size: 18px;
+}
+

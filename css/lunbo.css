@@ -1,0 +1,78 @@
+
+ #container{
+ 	position: relative;
+ 	width: 100%;
+ 	height: 500px;
+ 	margin: 20px auto;
+ }
+  
+ .pic li {
+ 	position: absolute;
+ 	top: 0;
+ 	left: 0;
+ 	display: none;
+ }
+ .pic li img {
+ 	width: 100%;
+ 	height: 500px;
+ 	text-align:center;
+ 	-webkit-background-size: 100%;
+ 	 background-size: 100%;
+ }
+ #point{
+ 	position: absolute;
+ 	bottom: 0;
+ 	right:0;
+ 	margin: 0;
+ 	background: #000;
+ 	opacity: 0.3;
+ 	width: 100%;
+ 	text-align: center;
+ }
+ #point li{
+ 	width: 10px;
+ 	height: 10px;
+ 	margin:0 2px;
+ 	display: inline-block;
+ 	-webkit-border-radius: 5px;
+ 	border-radius: 5px;
+ 	background-color: #AFAFAF;
+ }
+ #point .cur{
+ 	background-color: #ff0000;
+ }
+ 
+ .arrow { 
+ 	cursor: pointer;
+ 	display: none; 
+ 	line-height: 100px; 
+ 	text-align: center; 
+ 	font-size: 30px; 
+ 	font-weight: bold; 
+ 	width: 30px; 
+ 	height: 100px; 
+ 	position: absolute; 
+ 	z-index: 2; 
+ 	top: 50%;
+ 	margin-top: -20px; /*width的一半*/
+ 	background-color: RGBA(160,101,112,.0); 
+ 	color: #fff;
+ }
+ .arrow img{
+    opacity: 0.3;
+ 	width: 30px; 
+ 	height: 100px; 
+ }
+ .arrow img:hover { 
+ 	opacity: 0.8;
+ }
+ #container:hover .arrow { 
+ 	display: block;
+ }
+ #prev { 
+ 	left: 20px;
+ }
+ #next { 
+ 	right: 20px;
+ }
+

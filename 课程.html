@@ -1,0 +1,304 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>课程1</title>
+	<link href="css/p1.css" rel="stylesheet" type="text/css">
+	<link href="css/p2.css" rel="stylesheet" type="text/css">
+	<link href="css/top.css" rel="stylesheet" type="text/css">
+	<link  href="css/v-1.css"rel="stylesheet"type="text/css">
+	<link  href="css/v-2.css"rel="stylesheet"type="text/css">
+	<link  href="css/login.css"rel="stylesheet"type="text/css">
+	<link rel="stylesheet" type="text/css" href="css/lunbo.css"/>
+	<link rel="stylesheet" type="text/css" href="css/置顶.css"/>
+	<link rel="stylesheet" type="text/css" href="css/ziye.css"/>
+	<script type="text/javascript" src="js/login.js"></script>
+	<script src="js/jquery-3.4.1.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jquery-3.4.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/轮播图.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/置顶.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/验证码.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/login.js" type="text/javascript" charset="utf-8"></script>
+	
+	<script src="js/转换.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body>
+<!--置顶-->
+<a href="#"><div class="totop">
+	
+</div></a>
+<!--置顶结束-->		
+<!-- 登录弹框开始 -->
+<div id="bg" class="bg">
+
+	<div id="ToNewMain">
+			
+				<div id="" class="X" onclick="HideNew()">X</div>
+				<!--登录-->
+				<div id="login" class="major" onmousedown="event.stopPropagation()">
+					
+					<div id="" class="typing">请输入账号登录</div>
+
+					<from>
+						<input class="LoginText" name="login" placeholder="手机号/邮箱"/>
+						<input class="LoginText" type="password" name="login" placeholder="密码"/>
+						
+						<input class="logining" value="登录" onclick="islogin()" type="button"/>
+						
+						<div class="remember">记住密码<input type="checkbox" class="checkbox"/></div>
+					</from>
+					
+					<a href="" ><div class="forget">忘记密码</div></a>
+					
+					<div onclick="showregister()" class="notlogin">还没有帐号？点击注册</div>
+					<a href="#" class="tiaokuang1">《优课在线服务条款》</a>
+				</div>
+				
+				<!--注册-->
+				<div id="register" class="major" onmousedown="event.stopPropagation()">
+					<div id="" class="typing">新注册平台账号</div>
+
+					<from>
+						<input class="LoginText" type="text" name="register" placeholder="手机号/邮箱"/>
+						<input class="verification" type="text" name="register" placeholder="请输入验证码"/>
+						<div id="RegisterCode" onclick="showCode()" class="registercode">****</div>
+						<div onclick="showCode()" class="registercodename">看不清换一张</div>
+						
+						<input class="LoginText" type="password" name="register" placeholder="请输入密码"/>
+						<input class="LoginText" type="password" name="register" placeholder="请确认密码"/>
+						<input type="submit" value="立即注册" onclick="isregister()" class="vering"/>
+						<div onclick="showlogin()" class="notver" >已有账号？马上登陆</div>
+						
+					</from>
+					<div class="tiaokuangname">点击“立即注册“，即表示您同意遵守</div>
+					<a href="" class="tiaokuang2">《优课在线服务条款》</a>
+				</div>
+	
+	</div>
+
+</div>
+<!-- 登录弹框结束 -->
+
+<div class="big">
+<!-- 头开始 -->
+<div id="header">
+	<div class="big">
+		<div id="top">
+		<!-- logo开始 -->
+			<a href="优课主页.html"><img id="top-logo" src="img/top/top-logo.png" alt="logo"></a>
+		<!-- logo结束 -->
+		<!-- 左边导航 -->
+			<ul id="nav-left">
+				<li><a href="优课主页.html"style="color:#0B99FF">首页</a></li>
+				<li><a href="优课课程页.html">课程</a></li>
+				<li><a href="">
+				<img src="img/top/top-logo0.png" id="top-logo1">微专业
+				<img src="img/top/top-logo-hot2.png" id="top-logo-hot"></a></li>
+				<li><a href="">创新创业</a></li>
+				<li><a href="">实习</a></li>
+			</ul>
+		<!-- 左边导航结束 -->
+		<!-- 右边导航 -->
+		    <ul id="nav-right">
+		    <img src="img/top/top-logo4.png" id="top-logo4">
+            <li id="yidong"><a href="">移动端</a></li>
+            <input type="text" placeholder="请输入课程/学校/主讲老师" >
+            <button id="LoginBtu" onclick="showlogin()">登录</button>
+            <button id="RegisterBtu" onclick="showregister()">注册</button>
+		    </ul>
+		   <!-- 右边导航结束 -->
+		</div>
+		<!-- top结束	 --><!-- 头结束 -->
+		</div>
+</div>
+
+<div id="h-main">
+	<div id="t1">
+		<!-- 图片 -->
+		<div id="t1-1"><img src="img/kc1/p2-1.png" alt=""></div>
+		<!-- 大标题 -->
+
+        <div id="t1-2">“中美贸易摩擦辨析”《形势与政策》</div>
+        <div id="t1-3">--</div>
+        <div id="t2"> <a href="">深圳大学</a> / 徐建华(教授) </div>
+<!-- 详细信息 -->
+    <div id="t3">
+    	<div id="t3-1">
+    	      <p id="t3-1-1">中文</p>
+    	      <p id="t3-1-2">开课语种</p>
+    	</div>
+    	<div id="t3-1">
+    	      <p id="t3-1-1">1次</p>
+    	      <p id="t3-1-2">开课次数</p>
+    	</div>
+    	<div id="t3-1">
+    	      <p id="t3-1-1">26383人</p>
+    	      <p id="t3-1-2">累计选课</p>
+    	</div>
+    </div>
+<!-- 其他 -->
+<div id="t4"> 选择周期：<div id="t4-1"></div>无开课中的周期 </div>
+<div id="t5">
+	<div id="t5-1"><a href="">已关注：</a>
+	<a href=""><img src="img/kc1/p0-1.png" alt=""id="t5-1-1"></a>
+	<div id="t5-1-2"><a href="">70人</a></div></div>
+<!-- 图标 -->
+<div id="t5-2"> 
+<p id="t5-2-2">分享：</p>
+<a href=""><img src="img/kc1/p0-2.png" alt=""id="t5-2-1"></a>
+<a href=""><img src="img/kc1/p0-3.png" alt=""id="t5-2-1"></a>
+<a href=""><img src="img/kc1/p0-4.png" alt=""id="t5-2-1"></a>
+ </div>
+</div>
+	</div>
+	
+	<!--导航条-->
+<div id="u1">
+		<p id="u1-1" >基本介绍</p>
+		<p id="u2-1">章节目录</p>
+		<p id="u3-1">考核标准</p>
+		<p id="u4-1">教学计划</p>
+		<p id="u5-1">认证情况</p>
+		
+</div>
+		<!--导航条结束-->
+		
+		<div id="box">
+			<!--基本介绍-->
+		<div id="u1-1-1" style="display: block;">课程简介“大学计算机基础”是高等院校非计算机专业学生的计算机入门课程，在培养学生的计算机知识、素质和应用能力方面具有基础性和先导性的重要作用。
+    本课程分为两大部分，一部分是计算机理论教学，另一部分是计算机的应用能力的培养。
+    计算机理论教学主要介绍计算机的基本知识、基本概念，具体的软件使用在实验部分讲解。针对学生计算机水平起点提高的现状，结合当今最新计算机技术，对计算机基础的教学内容和知识体系进行整合、调整、修改和补充。同时注重展现计算思维，从计算思维的角度来阐述知识，培养大学生用计算机解决和处理问题的思维和能力，提升大学生的综合素质，强化创新实践。
+  “大学计算机基础”共分为6章，主要内容包括：第1章介绍计算机的基本知识、信息在计算机中的表示形式和编码；第2章介绍计算机的组成和工作原理；第3章介绍操作系统基础知识；第4章介绍算法与程序设计基础知识；第5章介绍多媒体的概念、图形图像、声音的数字化文件；第6章介绍计算机网络基础知识、Internet基础知识与应用等；
+    计算机的应用能力的培养力求全面而不肤浅地、精致而不啰嗦地将使用计算机的基本技能，以一系列有目的的实验为载体，快捷有效地提供给大学计算机基础的学习者。所有实验在内容上注重深入浅出、循序渐进，共分为13个实验。主要内容为：Windows的基本操作；Office 2010中的Word、PowerPoint、Excel的使用；计算机网络的基本操作；多媒体的基础实验；另外还有2个能充分展示学习者计算机操作能力的综合实验。
+教学目标
+本课程不仅加强基础理论教育，强化学生的计算机方面的知识，而且注重应用技能的培养，通过理论教学和实验教学，让学生不仅学会使用计算机的基本操作，而且掌握计算机的基本原理、基本方法和解决实际问题的能力。使学生较全面系统地掌握计算机软、硬件技术与网络技术的基本概念，掌握典型软、硬件系统的基本工作原理及其使用方法，了解软件设计与多媒体、自动化办公软件等以计算机为核心的现代信息处理技术，同时注重从计算思维的角度来阐述知识，在大学计算机基础教学中灌输计算思维，目的是培养当代大学生用计算机解决和处理问题的思维和能力，提升大学生的综合素质，强化创新实践能力；
+教学方法
+MOOC课程学习与传统实体课堂学习是不同的，主要依靠学习者的自觉性和主动性。希望同学们按时观看视频，根据进度学习，自己制定适合自己的学习计划，独立完成作业，踊跃参加论坛讨论。本课程每个知识点都有相应的习题练习，每个章节也有章节测验，观看完视频后，马上做相应的习题，遇到不会的题目，应再次观看视频，直到明白为止。实在不能解决的问题再通过讨论区或者qq群和同学们讨论，老师会定期在讨论区和qq群和大家一起探讨。本课程共有12个实验，每周有一个实验作业，每个作业的完成时间大约3~4周，同学们应注意相应的截止日期，过了期限就没法提交作业，实验作业提交后有老师批改，会给出相应的批语。
+利用优课联盟学习，可以随时随地与老师释疑解难，在讨论区里找到志同道合的伙伴，一起讨论，共同进步。随时随地学，不懂就反复看，不受时间空间限制，可以根据自身情况充分安排。希望同学们可以利用这个平台好好学习，不断充实自己的知识！
+
+		</div>
+		<!--基本介绍结束-->
+		
+		<!--章节目录页面-->
+		<div id="u2-1-1">
+1  计算机基础知识
+1.1  计算机的产生与发展
+1.2  数制及其运算
+1.3  数制转换
+1.4  数值数据在计算机中的表示
+1.5  “九九归一”的加法运算
+1.6  字符信息在计算机中的表示
+1.7  汉字编码
+ 1.8  第1章测试
+2  硬件基础
+2.1  计算机系统的基本组成
+2.2  中央处理器
+2.3  存储器
+2.4  总线与接口
+2.5  IO设备
+ 2.6  第2 章测试
+3  操作系统基础
+3.1  操作系统的定义和发展历史
+3.2  操作系统的资源管理功能
+3.3  从用户的角度操作系统的功能
+3.4  操作系统分类及常见的操作系统
+ 3.5  第3章测试
+		</div>
+		<!--章节目录页面结束-->
+		
+		<!--考核标准页面-->
+		<div id="u3-1-1">
+考核方法
+本课程授课方式采取自由模式
+视频（17%）：在线进行视频课程观看学习，完成7个章节每一讲视频在线学习。
+课程测验（20%）：完成前6章的章节测验。
+实验作业（25%）：在线进行实验视频学习，按照12个实验作业要求完成作业。
+签到（3%）: 课程网页签到次数。
+讨论（5%）：在讨论区，发表和讨论各个思考的看法，和进行师生交流等讨论交流活动。
+
+考试（30%）：本学期期末会安排期末在线考试，届时请注意考试通知。
+		</div>
+		<!--考核标准页面结束-->
+		
+		<!--教学计划页面-->
+		<div id="u4-1-1">
+			
+		</div>
+		<!--教学计划页面结束-->
+		
+		<!--认证情况页面-->
+		<div id="u5-1-1">
+			暂无认证机构
+		</div>
+</div>	
+	
+	
+	
+	
+</div>
+
+	
+
+
+
+<!--大框架结束-->
+</div>
+
+
+
+<!-- 底部横条 -->
+<div id="b-main"> 
+
+     <div id="footer">
+  <div class="c1">
+    <a href=""><img src="img/footer/footer-logo.png" alt=""></a>
+  </div>
+<!-- 第一行 -->
+  <ul id="c2">
+    <li><a href="">关于我们</a></li>
+    <li><a href="">服务条款</a></li>
+    <li><a href="">联系我们</a></li>
+    <li><a href="">机构管理</a></li>
+    <li><a href="">免责声明</a></li>
+  </ul>
+  <p id="c5">
+    
+    <a href=""class="c6"><img src="img/footer/footer-qq.png">在线QQ客服</a>
+    <span class="c7">客服工作时间：周一至周五09:30-18:30</span>
+  </p>
+<!-- 第二行 -->
+
+<p id="c3">
+  <a href="">粤ICO备16050337号-1</a>
+  <span style="margin: 0 5px;font-size: 12px;
+line-height: 1.8;color: #908f8f;">丨</span>
+    
+  <a href="">
+    <img src="img/footer/footer-gh.png" alt="">
+    粤公网安备44030502001269号
+  </a>
+    <span style="margin: 0 5px;font-size: 12px;
+line-height: 1.8;color: #908f8f;">丨</span>
+  <a href="">
+    增值电信业务经营许可证B2-20173213
+  </a>
+</p>
+<!-- 第三行 -->
+<p id="c4">
+  Copyright © 2015- 2018深圳市优课在线教育有限公司 
+</p>
+
+
+
+
+
+
+     </div>
+
+
+
+</div>
+
+</body>
+</html>

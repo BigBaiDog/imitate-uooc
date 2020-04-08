@@ -1,0 +1,1130 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link href="css/top.css" rel="stylesheet" type="text/css">
+	<link  href="css/v-1.css"rel="stylesheet"type="text/css">
+	<link  href="css/v-2.css"rel="stylesheet"type="text/css">
+	<link  href="css/login.css"rel="stylesheet"type="text/css">
+	<link rel="stylesheet" type="text/css" href="css/lunbo.css"/>
+	<link rel="stylesheet" type="text/css" href="css/置顶.css"/>
+	
+	<script type="text/javascript" src="js/login.js"></script>
+	<script src="js/jquery-3.4.1.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jquery-3.4.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/轮播图.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/置顶.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/验证码.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/login.js" type="text/javascript" charset="utf-8"></script>
+<title></title>
+</head>
+
+<style>
+
+#w-main{
+		width: 100%;
+		height: 1150px;
+	}
+#h-main{
+	 width: 100%;
+     height: 4650px;
+     background-color: rgb(241,241,241);
+}
+#b-main{
+	width: 100%;
+	height: 135px;
+	background-color: rgb(49,49,49);
+}
+</style>
+<body>
+	
+<!--置顶-->
+<a href="#"><div class="totop">
+	
+</div></a>
+<!--置顶结束-->
+	
+<!-- 登录弹框开始 -->
+<div id="bg" class="bg">
+
+	<div id="ToNewMain">
+			
+				<div id="" class="X" onclick="HideNew()">X</div>
+				<!--登录-->
+				<div id="login" class="major" onmousedown="event.stopPropagation()">
+					
+					<div id="" class="typing">请输入账号登录</div>
+
+					<from>
+						<input class="LoginText" name="login" placeholder="手机号/邮箱"/>
+						<input class="LoginText" type="password" name="login" placeholder="密码"/>
+						
+						<input class="logining" value="登录" onclick="islogin()" type="button"/>
+						
+						<div class="remember">记住密码<input type="checkbox" class="checkbox"/></div>
+					</from>
+					
+					<a href="" ><div class="forget">忘记密码</div></a>
+					
+					<div onclick="showregister()" class="notlogin">还没有帐号？点击注册</div>
+					<a href="#" class="tiaokuang1">《优课在线服务条款》</a>
+				</div>
+				
+				<!--注册-->
+				<div id="register" class="major" onmousedown="event.stopPropagation()">
+					<div id="" class="typing">新注册平台账号</div>
+
+					<from>
+						<input class="LoginText" type="text" name="register" placeholder="手机号/邮箱"/>
+						<input class="verification" type="text" name="register" placeholder="请输入验证码"/>
+						<div id="RegisterCode" onclick="showCode()" class="registercode">****</div>
+						<div onclick="showCode()" class="registercodename">看不清换一张</div>
+						
+						<input class="LoginText" type="password" name="register" placeholder="请输入密码"/>
+						<input class="LoginText" type="password" name="register" placeholder="请确认密码"/>
+						<input type="submit" value="立即注册" onclick="isregister()" class="vering"/>
+						<div onclick="showlogin()" class="notver" >已有账号？马上登陆</div>
+						
+					</from>
+					<div class="tiaokuangname">点击“立即注册“，即表示您同意遵守</div>
+					<a href="" class="tiaokuang2">《优课在线服务条款》</a>
+				</div>
+	
+	</div>
+
+</div>
+<!-- 登录弹框结束 -->
+
+
+
+<div class="big">
+<!-- 右边导航条跟随区域 -->
+
+<div id="daohang-right">
+  <div id="d1">
+    
+  </div>
+
+</div>
+
+
+
+
+<!-- 白色背景开始 -->
+<div id="w-main">
+<!-- 头开始 -->
+<div id="header">
+	<div class="big">
+		<div id="top">
+		<!-- logo开始 -->
+			<a href="优课主页.html"><img id="top-logo" src="img/top/top-logo.png" alt="logo"></a>
+		<!-- logo结束 -->
+		<!-- 左边导航 -->
+			<ul id="nav-left">
+				<li><a href="优课主页.html"style="color:#0B99FF">首页</a></li>
+				<li><a href="优课课程页.html">课程</a></li>
+				<li><a href="">
+				<img src="img/top/top-logo0.png" id="top-logo1">微专业
+				<img src="img/top/top-logo-hot2.png" id="top-logo-hot"></a></li>
+				<li><a href="">创新创业</a></li>
+				<li><a href="">实习</a></li>
+			</ul>
+		<!-- 左边导航结束 -->
+		<!-- 右边导航 -->
+		    <ul id="nav-right">
+		    <img src="img/top/top-logo4.png" id="top-logo4">
+            <li id="yidong"><a href="">移动端</a></li>
+            <input type="text" placeholder="请输入课程/学校/主讲老师" >
+            <button id="LoginBtu" onclick="showlogin()">登录</button>
+            <button id="RegisterBtu" onclick="showregister()">注册</button>
+		    </ul>
+		   <!-- 右边导航结束 -->
+		</div>
+		<!-- top结束	 --><!-- 头结束 -->
+		</div>
+</div>
+
+
+
+<!--轮播图-->
+
+<div id="container">
+ 		<ul class="pic">
+ 			<li><a href=""><img src="img/lunbotu/lunbotu (1).png" alt="pic1"></a></li>
+ 			<li><a href=""><img src="img/lunbotu/lunbotu (2).png" alt="pic2"></a></li>
+ 			<li><a href=""><img src="img/lunbotu/lunbotu (1).jpg" alt="pic3"></a></li>
+ 			<li><a href=""><img src="img/lunbotu/lunbotu (2).jpg" alt="pic3"></a></li>
+ 			<li><a href=""><img src="img/lunbotu/lunbotu (3).jpg" alt="pic3"></a></li>
+ 			<li><a href=""><img src="img/lunbotu/lunbotu (4).jpg" alt="pic3"></a></li>
+ 		</ul>
+ 		<ul id="point">
+ 			<li class="cur"></li>
+ 			<li class=""></li>
+ 			<li class=""></li>
+ 			<li class=""></li>
+ 			<li class=""></li>
+ 			<li class=""></li>
+ 		</ul>
+ 
+ 	
+ <!--左右按钮-->
+ <a href="javascript:;" id="prev" class="arrow"><img src="img/lunbotu/left.png"/></a>
+ <a href="javascript:;" id="next" class="arrow"><img src="img/lunbotu/right.png"/></a>
+ 
+ </div>
+<!-- 滚动结束 -->
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 选择导航开始 -->
+<div id="sub-top">
+	<div class="sub-top1">
+	<a href="">合作组织/院校</a>
+	</div>
+	<div class="sub-top2">
+	<a href=""><img src="img/top/sub-top-home-logo1.png" alt=""></a>
+	<a href=""><img src="img/top/sub-top-home-logo2.png" alt=""></a>
+	<a href=""><img src="img/top/sub-top-home-logo3.png" alt=""></a>
+	</div>
+	<div class="sub-top3">
+		<a href=""id="sub-top-home-logo4">更多院校<img src="img/top/sub-top-home-logo4.png" alt=""id="sub-top-home-logo4"></a>
+	</div>
+</div>
+<!-- 主体分框架 -->
+<div id="sub-kecheng">
+<!-- 横条 -->
+            <div class="a1">
+            <div class="a1-1">推荐课程
+                	<div class="a1-2"><a href=""> > </a></div >
+             	    <div  class="a1-2"><a href=""> < </a></div >
+            </div>
+         
+            </div>
+<!-- 横条结束 -->
+<!-- 四个区域块 -->
+            <div class="a2">
+	<!-- 第一个区域 -->
+            <a href=""><div class="a3">
+            <img src="img/body/body-tj/body-tj1.png" id="a4" >
+	         <div class="a5"> 
+	        <span class="a6">英语四级必过班-双保险</span>
+	        <div class="a7">
+	        <span class="a7-1">优课大学</span>
+	        <span class="a7-2">/CET</span>	
+	        </div></div></div></a>
+	<!-- 第二个区域 -->
+            <a href=""><div class="a3">
+            <img src="img/body/body-tj/body-tj2.png" id="a4">
+	         <div class="a5"> 
+	        <span class="a6">英语四级必过班-奖学金</span>
+	        <div class="a7">
+	        <span class="a7-1">优课大学</span>
+	        <span class="a7-2">/CET</span>	
+	        </div></div></div></a>
+	<!-- 第三个区域 -->
+            <a href=""><div class="a3">
+            <img src="img/body/body-tj/body-tj3.png" id="a4">
+	         <div class="a5"> 
+	        <span class="a6">电子竞技（基础入门班）</span>
+	        <div class="a7">
+	        <span class="a7-1">优课大学</span>
+	        <span class="a7-2">/Phoebe</span>	
+	        </div></div></div></a>
+	<!-- 第四个区域 -->
+            <a href=""><div class="a3">
+            <img src="img/body/body-tj/body-tj4.png" id="a4">
+	         <div class="a5"> 
+	        <span class="a6">互联网运营（实训指导班）</span>
+	        <div class="a7">
+	        <span class="a7-1">优课大学</span>
+	        <span class="a7-2">/林梓枫</span>	
+	        </div></div></div></a>
+</div>
+<!-- 四个区域块结束 -->
+</div></div>
+<!-- 白色背景结束 -->
+
+
+
+
+
+<!-- 灰色背景开始 -->
+<div id="h-main">
+	
+
+
+
+
+
+<!--******************************************* -->
+<!--******************************************* -->
+<!--******************************************* -->
+
+
+
+
+
+
+
+
+
+
+ <!-- 第一个区域大块 就业微专业区域 -->
+     <div id="sub-b0">
+            <div class="b1">就业微专业</div>
+                   <div class="b2">
+            <div  class="b0"><img src="img/body/body-jywzy/body-jywzy0.png"></div>
+<!-- 第一个小块         -->
+    <a href=""><div class="b3">
+        <img src="img/body/body-jywzy/body-jywzy1.png" >
+            <div class="b4">
+                    <span class="b5">互联网运营（技能学习班）</span>
+                <div class="b6">
+                   	<span class="b6-1">优课大学/</span>
+                   	<span class="b6-2">林梓枫</span>
+                </div>
+            </div>
+    </div></a>
+<!-- 第二个小块         -->
+    <a href=""><div class="b3">
+        <img src="img/body/body-jywzy/body-jywzy2.png" >
+            <div class="b4">
+                    <span class="b5">新媒体运营（技能学习班）</span>
+                <div class="b6">
+                   	<span class="b6-1">优课大学/</span>
+                   	<span class="b6-2">塔塔</span>
+                </div>
+            </div>
+    </div>  </a> 
+<!-- 第三个小块         -->
+    <a href=""><div class="b3">
+        <img src="img/body/body-jywzy/body-jywzy3.png" >
+            <div class="b4">
+                    <span class="b5">阿里云大数据ACP</span>
+                <div class="b6">
+                   	<span class="b6-1">优课大学/</span>
+                   	<span class="b6-2">阿里云...</span>
+                </div>
+            </div>
+    </div>  </a>          
+<!-- 第四个小块         -->
+    <a href=""><div class="b3">
+        <img src="img/body/body-jywzy/body-jywzy4.png" >
+            <div class="b4">
+                    <span class="b5">阿里云云安全ACA</span>
+                <div class="b6">
+                   	<span class="b6-1">优课大学/</span>
+                   	<span class="b6-2">阿里云</span>
+                </div>
+            </div>
+    </div></a>
+<!-- 第五个小块         -->
+    <a href=""><div class="b3">
+        <img src="img/body/body-jywzy/body-jywzy5.png" >
+            <div class="b4">
+                    <span class="b5">阿里云云计算ACA</span>
+                <div class="b6">
+                   	<span class="b6-1">优课大学/</span>
+                   	<span class="b6-2">阿里云</span>
+                </div>
+            </div>
+    </div></a>
+<!-- 第六个小块         -->
+    <a href=""><div class="b3">
+        <img src="img/body/body-jywzy/body-jywzy6.png" >
+            <div class="b4">
+                    <span class="b5">游戏策划（进阶课）-游戏设计艺术</span>
+                <div class="b6">
+                   	<span class="b6-1">优课大学/</span>
+                   	<span class="b6-2">申华</span>
+                </div>
+            </div>
+    </div></a>
+<!-- 第七个小块         -->
+   <a href=""><div class="b3">
+        <img src="img/body/body-jywzy/body-jywzy7.png" >
+            <div class="b4">
+                    <span class="b5">游戏策划：游戏性的探究</span>
+                <div class="b6">
+                   	<span class="b6-1">优课大学/</span>
+                   	<span class="b6-2">申华</span>
+                </div>
+            </div>
+    </div></a>
+<!-- 第八个小块         -->
+    <a href=""><div class="b3">
+        <img src="img/body/body-jywzy/body-jywzy8.png" >
+            <div class="b4">
+                    <span class="b5">产品经理-腾讯内训级入门</span>
+                <div class="b6">
+                   	<span class="b6-1">优课大学/</span>
+                   	<span class="b6-2">王可新</span>
+                </div>
+            </div>
+    </div></a>
+</div>  </div>
+<!--  第一个区域结束  -->
+
+
+
+
+
+
+         <!--********************************* -->
+         <!--********************************* -->
+
+
+
+
+
+
+
+
+<!--****************************************************** -->
+<!--****************************************************** -->
+
+
+
+<!-- 第二个区域大块  人气课程 -->
+     <div id="sub-b0">
+            <div class="b1">人气课程</div>
+                   <div class="b2">
+            <div  class="b0"><img src="img/body/body-rqkc/body-rqkc0.png"></div>
+<!-- 第一个小块         -->
+    <a href=""><div class="b3">
+        <img src="img/body/body-rqkc/body-rqkc1.png" >
+            <div class="b4">
+                    <span class="b5">走进性科学</span>
+                <div class="b6">
+                   	<span class="b6-1">福建师范大学/</span>
+                   	<span class="b6-2">江剑平</span>
+                </div>
+            </div>
+    </div></a>
+<!-- 第二个小块         -->
+    <a href=""><div class="b3">
+        <img src="img/body/body-rqkc/body-rqkc2.png" >
+            <div class="b4">
+                    <span class="b5">音乐与健康</span>
+                <div class="b6">
+                   	<span class="b6-1">宁波大学/</span>
+                   	<span class="b6-2">王蕾</span>
+                </div>
+            </div>
+    </div>  </a> 
+<!-- 第三个小块         -->
+    <a href=""><div class="b3">
+        <img src="img/body/body-rqkc/body-rqkc3.png" >
+            <div class="b4">
+                    <span class="b5">拓展英语词汇</span>
+                <div class="b6">
+                   	<span class="b6-1">青岛大学/</span>
+                   	<span class="b6-2">李秀清</span>
+                </div>
+            </div>
+    </div>  </a>          
+<!-- 第四个小块         -->
+    <a href=""><div class="b3">
+        <img src="img/body/body-rqkc/body-rqkc4.png" >
+            <div class="b4">
+                    <span class="b5">生活中的经济学</span>
+                <div class="b6">
+                   	<span class="b6-1">深圳大学/</span>
+                   	<span class="b6-2">陶一桃</span>
+                </div>
+            </div>
+    </div></a>
+<!-- 第五个小块         -->
+    <a href=""><div class="b3">
+        <img src="img/body/body-rqkc/body-rqkc5.png" >
+            <div class="b4">
+                    <span class="b5">建筑艺术与赏析</span>
+                <div class="b6">
+                   	<span class="b6-1">哈尔滨学院/</span>
+                   	<span class="b6-2">王志伟</span>
+                </div>
+            </div>
+    </div></a>
+<!-- 第六个小块         -->
+    <a href=""><div class="b3">
+        <img src="img/body/body-rqkc/body-rqkc6.png" >
+            <div class="b4">
+                    <span class="b5">积极心理学</span>
+                <div class="b6">
+                   	<span class="b6-1">深圳大学/</span>
+                   	<span class="b6-2">王晓钧</span>
+                </div>
+            </div>
+    </div></a>
+<!-- 第七个小块         -->
+   <a href=""><div class="b3">
+        <img src="img/body/body-rqkc/body-rqkc7.png" >
+            <div class="b4">
+                    <span class="b5">程序设计基础（C语言）</span>
+                <div class="b6">
+                   	<span class="b6-1">深圳大学/</span>
+                   	<span class="b6-2">杨艳丽</span>
+                </div>
+            </div>
+    </div></a>
+<!-- 第八个小块         -->
+    <a href=""><div class="b3">
+        <img src="img/body/body-rqkc/body-rqkc8.png" >
+            <div class="b4">
+                    <span class="b5">理解广告</span>
+                <div class="b6">
+                   	<span class="b6-1">苏州大学/</span>
+                   	<span class="b6-2">胡明宇</span>
+                </div>
+            </div>
+    </div></a>
+</div>  </div>
+<!--  第二个区域结束  -->
+
+
+
+                <!--************************************ -->
+                <!--************************************ -->
+
+
+
+                     <!--************************ -->
+                     <!--************************ -->
+
+
+
+      <!--******************************************************* -->
+    <!--********************************************************* -->
+
+<!-- 第三个区域大块  国学经典-->
+     <div id="sub-b0">
+            <div class="b1">国学经典</div>
+                   <div class="b2">
+            <div  class="b0"><img src="img/body/body-gxjd/body-gxjd0.png"></div>
+<!-- 第一个小块         -->
+    <a href=""><div class="b3">
+        <img src="img/body/body-gxjd/body-gxjd1.png" >
+            <div class="b4">
+                    <span class="b5">《庄子》精讲</span>
+                <div class="b6">
+                   	<span class="b6-1">深圳大学/</span>
+                   	<span class="b6-2">李大华</span>
+                </div>
+            </div>
+    </div></a>
+<!-- 第二个小块         -->
+    <a href=""><div class="b3">
+        <img src="img/body/body-gxjd/body-gxjd2.png" >
+            <div class="b4">
+                    <span class="b5">论语讲诵</span>
+                <div class="b6">
+                   	<span class="b6-1">深圳大学/</span>
+                   	<span class="b6-2">徐晋如</span>
+                </div>
+            </div>
+    </div>  </a> 
+<!-- 第三个小块         -->
+    <a href=""><div class="b3">
+        <img src="img/body/body-gxjd/body-gxjd3.png" >
+            <div class="b4">
+                    <span class="b5">资治通鉴与传统政治文化</span>
+                <div class="b6">
+                   	<span class="b6-1">深圳大学/</span>
+                   	<span class="b6-2">周萌</span>
+                </div>
+            </div>
+    </div>  </a>          
+<!-- 第四个小块         -->
+    <a href=""><div class="b3">
+        <img src="img/body/body-gxjd/body-gxjd4.png" >
+            <div class="b4">
+                    <span class="b5">唐宋词与人生</span>
+                <div class="b6">
+                   	<span class="b6-1">深圳大学/</span>
+                   	<span class="b6-2">范晓燕</span>
+                </div>
+            </div>
+    </div></a>
+<!-- 第五个小块         -->
+    <a href=""><div class="b3">
+        <img src="img/body/body-gxjd/body-gxjd5.png" >
+            <div class="b4">
+                    <span class="b5">品诗论史</span>
+                <div class="b6">
+                   	<span class="b6-1">深圳大学/</span>
+                   	<span class="b6-2">章必功</span>
+                </div>
+            </div>
+    </div></a>
+<!-- 第六个小块         -->
+    <a href=""><div class="b3">
+        <img src="img/body/body-gxjd/body-gxjd6.png" >
+            <div class="b4">
+                    <span class="b5">国学经典</span>
+                <div class="b6">
+                   	<span class="b6-1">成都大学/</span>
+                   	<span class="b6-2">万平</span>
+                </div>
+            </div>
+    </div></a>
+<!-- 第七个小块         -->
+   <a href=""><div class="b3">
+        <img src="img/body/body-gxjd/body-gxjd7.png" >
+            <div class="b4">
+                    <span class="b5">古典文学的城市书写</span>
+                <div class="b6">
+                   	<span class="b6-1">苏州大学/</span>
+                   	<span class="b6-2">杨旭辉</span>
+                </div>
+            </div>
+    </div></a>
+<!-- 第八个小块         -->
+    <a href=""><div class="b3">
+        <img src="img/body/body-gxjd/body-gxjd8.png" >
+            <div class="b4">
+                    <span class="b5">道家思想与心智健康</span>
+                <div class="b6">
+                   	<span class="b6-1">中南大学/</span>
+                   	<span class="b6-2">吕锡堔</span>
+                </div>
+            </div>
+    </div></a>
+</div>  </div>
+<!--  第三个区域结束  -->
+
+
+       <!--******************************************-->
+       <!--******************************************-->
+       <!--******************************************-->
+       <!--*       *****             *****         **-->
+       <!--*       *****             *****         **-->
+       <!--*       *****             ******        **-->
+       <!--*       *****             *****         **-->
+       <!--************               ************ **-->
+       <!--************                 ********** **-->
+       <!--***********                  *************-->
+       <!--***                                  *****-->
+       <!--                                        **-->
+       <!--                                        **-->
+       <!--                                        **-->
+       <!--                                        **-->
+      <!--*******************************************-->
+      <!--*******************************************-->
+      <!--*******************************************-->
+
+<!-- 第四个区域大块  心理学 -->
+     <div id="sub-b0">
+            <div class="b1">心理学</div>
+                   <div class="b2">
+            <div  class="b0"><img src="img/body/body-xlx/body-xlx0.png"></div>
+<!-- 第一个小块         -->
+    <a href=""><div class="b3">
+        <img src="img/body/body-xlx/body-xlx1.png" >
+            <div class="b4">
+                    <span class="b5">生活心理学</span>
+                <div class="b6">
+                   	<span class="b6-1">湖北工程大学/</span>
+                   	<span class="b6-2">刘运芳</span>
+                </div>
+            </div>
+    </div></a>
+<!-- 第二个小块         -->
+    <a href=""><div class="b3">
+        <img src="img/body/body-xlx/body-xlx2.png" >
+            <div class="b4">
+                    <span class="b5">生命教育</span>
+                <div class="b6">
+                   	<span class="b6-1">韩山师范学院/</span>
+                   	<span class="b6-2">戴景平</span>
+                </div>
+            </div>
+    </div>  </a> 
+<!-- 第三个小块         -->
+    <a href=""><div class="b3">
+        <img src="img/body/body-xlx/body-xlx3.png" >
+            <div class="b4">
+                    <span class="b5">生死学</span>
+                <div class="b6">
+                   	<span class="b6-1">广州大学/</span>
+                   	<span class="b6-2">胡宜安</span>
+                </div>
+            </div>
+    </div>  </a>          
+<!-- 第四个小块         -->
+    <a href=""><div class="b3">
+        <img src="img/body/body-xlx/body-xlx4.png" >
+            <div class="b4">
+                    <span class="b5">工作中的心理与行为</span>
+                <div class="b6">
+                   	<span class="b6-1">深圳大学/</span>
+                   	<span class="b6-2">王忠</span>
+                </div>
+            </div>
+    </div></a>
+<!-- 第五个小块         -->
+    <a href=""><div class="b3">
+        <img src="img/body/body-xlx/body-xlx5.png" >
+            <div class="b4">
+                    <span class="b5">弗洛伊德《精神分析引论》精读</span>
+                <div class="b6">
+                   	<span class="b6-1">深圳大学/</span>
+                   	<span class="b6-2">王晓钧</span>
+                </div>
+            </div>
+    </div></a>
+<!-- 第六个小块         -->
+    <a href=""><div class="b3">
+        <img src="img/body/body-xlx/body-xlx6.png" >
+            <div class="b4">
+                    <span class="b5">大学生心理健康</span>
+                <div class="b6">
+                   	<span class="b6-1">深圳大学/</span>
+                   	<span class="b6-2">王晓钧</span>
+                </div>
+            </div>
+    </div></a>
+<!-- 第七个小块         -->
+   <a href=""><div class="b3">
+        <img src="img/body/body-xlx/body-xlx7.png" >
+            <div class="b4">
+                    <span class="b5">发展心理学</span>
+                <div class="b6">
+                   	<span class="b6-1">深圳大学/</span>
+                   	<span class="b6-2">李晓东</span>
+                </div>
+            </div>
+    </div></a>
+<!-- 第八个小块         -->
+    <a href=""><div class="b3">
+        <img src="img/body/body-xlx/body-xlx8.png" >
+            <div class="b4">
+                    <span class="b5">寻访文艺审美心理</span>
+                <div class="b6">
+                   	<span class="b6-1">江汉大学大学/</span>
+                   	<span class="b6-2">张贞</span>
+                </div>
+            </div>
+    </div></a>
+</div>  </div>
+<!--  第四个区域结束  -->
+
+
+
+
+      <!--**************************************-->
+      <!--**************************************-->
+                      <!--*
+                     ******
+                    ******
+                   ******
+        *************************************
+        *****/*******************************
+               ******                *****
+              ******                *****
+             ******                ****
+           ******                  *****
+         ******                   *****
+        ******                    **-->
+ <!--***********************************************-->
+ <!--***********************************************-->
+
+
+
+<!-- 第五个区域大块  计算机 -->
+     <div id="sub-b0">
+            <div class="b1">计算机</div>
+                   <div class="b2">
+            <div  class="b0"><img src="img/body/body-jsj/body-jsj0.png"></div>
+<!-- 第一个小块         -->
+    <a href=""><div class="b3">
+        <img src="img/body/body-jsj/body-jsj1.png" >
+            <div class="b4">
+                    <span class="b5">大学计算机基础</span>
+                <div class="b6">
+                   	<span class="b6-1">湖北大学/</span>
+                   	<span class="b6-2">卫春芳</span>
+                </div>
+            </div>
+    </div></a>
+<!-- 第二个小块         -->
+    <a href=""><div class="b3">
+        <img src="img/body/body-jsj/body-jsj2.png" >
+            <div class="b4">
+                    <span class="b5">C君带你玩编程</span>
+                <div class="b6">
+                   	<span class="b6-1">昆明理工大学/</span>
+                   	<span class="b6-2">方娇丽</span>
+                </div>
+            </div>
+    </div>  </a> 
+<!-- 第三个小块         -->
+    <a href=""><div class="b3">
+        <img src="img/body/body-jsj/body-jsj3.png" >
+            <div class="b4">
+                    <span class="b5">java语言程序设计</span>
+                <div class="b6">
+                   	<span class="b6-1">始终大学/</span>
+                   	<span class="b6-2">潘微科</span>
+                </div>
+            </div>
+    </div>  </a>          
+<!-- 第四个小块         -->
+    <a href=""><div class="b3">
+        <img src="img/body/body-jsj/body-jsj4.png" >
+            <div class="b4">
+                    <span class="b5">人工智能技术与现代应用</span>
+                <div class="b6">
+                   	<span class="b6-1">深圳大学/</span>
+                   	<span class="b6-2">唐雪嵩</span>
+                </div>
+            </div>
+    </div></a>
+<!-- 第五个小块         -->
+    <a href=""><div class="b3">
+        <img src="img/body/body-jsj/body-jsj5.png" >
+            <div class="b4">
+                    <span class="b5">网络动画设计Flash（基础篇）</span>
+                <div class="b6">
+                   	<span class="b6-1">深圳大学/</span>
+                   	<span class="b6-2">涂相华</span>
+                </div>
+            </div>
+    </div></a>
+<!-- 第六个小块         -->
+    <a href=""><div class="b3">
+        <img src="img/body/body-jsj/body-jsj6.png" >
+            <div class="b4">
+                    <span class="b5">Windows程序设计</span>
+                <div class="b6">
+                   	<span class="b6-1">湖北大学/</span>
+                   	<span class="b6-2">孙斌</span>
+                </div>
+            </div>
+    </div></a>
+<!-- 第七个小块         -->
+   <a href=""><div class="b3">
+        <img src="img/body/body-jsj/body-jsj7.png" >
+            <div class="b4">
+                    <span class="b5">无线与移动网技术</span>
+                <div class="b6">
+                   	<span class="b6-1">温州大学/</span>
+                   	<span class="b6-2">唐震洲</span>
+                </div>
+            </div>
+    </div></a>
+<!-- 第八个小块         -->
+    <a href=""><div class="b3">
+        <img src="img/body/body-jsj/body-jsj8.png" >
+            <div class="b4">
+                    <span class="b5">计算思维导论</span>
+                <div class="b6">
+                   	<span class="b6-1">广西科技大学/</span>
+                   	<span class="b6-2">唐培和</span>
+                </div>
+            </div>
+    </div></a>
+</div>  </div>
+<!--  第五个区域结束  -->
+
+                        <!-- ****
+                        **********
+                        ***********
+                            ********
+                              ********
+                               *****-->
+    <!--*****************************************************-->
+    <!--*****************************************************-->
+    <!--*****************************************************-->
+                         <!--               **
+                         ***                *** 
+                        *****               ****
+                     **********             ********
+                   ***********              ********
+                  *********                  **********
+                 **********                   ********** 
+                *********                     ***********
+              **********                       *********-->
+
+
+<!-- 第六个区域大块  创业职场 -->
+     <div id="sub-b0">
+            <div class="b1">创业职场</div>
+                   <div class="b2">
+            <div  class="b0"><img src="img/body/body-cyzc/body-cyzc0.png"></div>
+<!-- 第一个小块         -->
+    <a href=""><div class="b3">
+        <img src="img/body/body-cyzc/body-cyzc1.png" >
+            <div class="b4">
+                    <span class="b5">谈判技巧</span>
+                <div class="b6">
+                   	<span class="b6-1">深圳大学/</span>
+                   	<span class="b6-2">刘军</span>
+                </div>
+            </div>
+    </div></a>
+<!-- 第二个小块         -->
+    <a href=""><div class="b3">
+        <img src="img/body/body-cyzc/body-cyzc2.png" >
+            <div class="b4">
+                    <span class="b5">人际关系-社交礼仪</span>
+                <div class="b6">
+                   	<span class="b6-1">宁波大学/</span>
+                   	<span class="b6-2">孔伟英</span>
+                </div>
+            </div>
+    </div>  </a> 
+<!-- 第三个小块         -->
+    <a href=""><div class="b3">
+        <img src="img/body/body-cyzc/body-cyzc3.png" >
+            <div class="b4">
+                    <span class="b5">职场需要的18种能力</span>
+                <div class="b6">
+                   	<span class="b6-1">深圳大学/</span>
+                   	<span class="b6-2">林海鹰</span>
+                </div>
+            </div>
+    </div>  </a>          
+<!-- 第四个小块         -->
+    <a href=""><div class="b3">
+        <img src="img/body/body-cyzc/body-cyzc4.png" >
+            <div class="b4">
+                    <span class="b5">沟通智慧</span>
+                <div class="b6">
+                   	<span class="b6-1">宁波大学/</span>
+                   	<span class="b6-2">赵振宇</span>
+                </div>
+            </div>
+    </div></a>
+<!-- 第五个小块         -->
+    <a href=""><div class="b3">
+        <img src="img/body/body-cyzc/body-cyzc5.png" >
+            <div class="b4">
+                    <span class="b5">创客-大学生创新创业基础</span>
+                <div class="b6">
+                   	<span class="b6-1">黑龙江大学/</span>
+                   	<span class="b6-2">李海东</span>
+                </div>
+            </div>
+    </div></a>
+<!-- 第六个小块         -->
+    <a href=""><div class="b3">
+        <img src="img/body/body-cyzc/body-cyzc6.png" >
+            <div class="b4">
+                    <span class="b5">《菜根谭》与职场智慧</span>
+                <div class="b6">
+                   	<span class="b6-1">深圳大学/</span>
+                   	<span class="b6-2">霍明琨</span>
+                </div>
+            </div>
+    </div></a>
+<!-- 第七个小块         -->
+   <a href=""><div class="b3">
+        <img src="img/body/body-cyzc/body-cyzc7.png" >
+            <div class="b4">
+                    <span class="b5">创业：道与术</span>
+                <div class="b6">
+                   	<span class="b6-1">长江互联网教.../</span>
+                   	<span class="b6-2">汪军民</span>
+                </div>
+            </div>
+    </div></a>
+<!-- 第八个小块         -->
+    <a href=""><div class="b3">
+        <img src="img/body/body-cyzc/body-cyzc8.png" >
+            <div class="b4">
+                    <span class="b5">职业：道与术</span>
+                <div class="b6">
+                   	<span class="b6-1">长江互联网教.../</span>
+                   	<span class="b6-2">汪军民</span>
+                </div>
+            </div>
+    </div></a>
+</div>  </div>
+<!--  第六个区域结束  -->
+
+                              <!--***
+                              *******
+                              *******
+                              *******
+                              *******
+    ***************************************************************
+    ***************************************************************
+    **************************************************************
+                              *******
+                              *******
+                              *******
+                              *******
+                              *******
+                              *******
+                              *******
+                              *******
+                              *******
+                              *******                 ******
+                              ********               *******
+                              *********              ******
+                              ****************************
+                              ***************************
+                              ***********************-->
+
+<!-- 第七个区域大块  人文素养 -->
+     <div id="sub-b0">
+            <div class="b1">人文素养</div>
+                   <div class="b2">
+            <div  class="b0"><img src="img/body/body-rwsy/body-rwsy0.png"></div>
+<!-- 第一个小块         -->
+    <a href=""><div class="b3">
+        <img src="img/body/body-rwsy/body-rwsy1.png" >
+            <div class="b4">
+                    <span class="b5">艺术的星空：艺术美学十二讲</span>
+                <div class="b6">
+                   	<span class="b6-1">南昌大学/</span>
+                   	<span class="b6-2">何世剑</span>
+                </div>
+            </div>
+    </div></a>
+<!-- 第二个小块         -->
+    <a href=""><div class="b3">
+        <img src="img/body/body-rwsy/body-rwsy2.png" >
+            <div class="b4">
+                    <span class="b5">西方美术作品鉴赏</span>
+                <div class="b6">
+                   	<span class="b6-1">深圳大学/</span>
+                   	<span class="b6-2">李建群</span>
+                </div>
+            </div>
+    </div>  </a> 
+<!-- 第三个小块         -->
+    <a href=""><div class="b3">
+        <img src="img/body/body-rwsy/body-rwsy3.png" >
+            <div class="b4">
+                    <span class="b5">走进民间音乐</span>
+                <div class="b6">
+                   	<span class="b6-1">哈尔滨学院/</span>
+                   	<span class="b6-2">赵薇</span>
+                </div>
+            </div>
+    </div>  </a>          
+<!-- 第四个小块         -->
+    <a href=""><div class="b3">
+        <img src="img/body/body-rwsy/body-rwsy4.png" >
+            <div class="b4">
+                    <span class="b5">茶与生活</span>
+                <div class="b6">
+                   	<span class="b6-1">深圳大学/</span>
+                   	<span class="b6-2">林伟强</span>
+                </div>
+            </div>
+    </div></a>
+<!-- 第五个小块         -->
+    <a href=""><div class="b3">
+        <img src="img/body/body-rwsy/body-rwsy5.png" >
+            <div class="b4">
+                    <span class="b5">汉字书写的艺术</span>
+                <div class="b6">
+                   	<span class="b6-1">哈尔滨学院/</span>
+                   	<span class="b6-2">王柏松</span>
+                </div>
+            </div>
+    </div></a>
+<!-- 第六个小块         -->
+    <a href=""><div class="b3">
+        <img src="img/body/body-rwsy/body-rwsy6.png" >
+            <div class="b4">
+                    <span class="b5">视觉与色彩</span>
+                <div class="b6">
+                   	<span class="b6-1">深圳大学/</span>
+                   	<span class="b6-2">姚其</span>
+                </div>
+            </div>
+    </div></a>
+<!-- 第七个小块         -->
+   <a href=""><div class="b3">
+        <img src="img/body/body-rwsy/body-rwsy7.png" >
+            <div class="b4">
+                    <span class="b5">修养与生活</span>
+                <div class="b6">
+                   	<span class="b6-1">黑龙江大学/</span>
+                   	<span class="b6-2">袁敏</span>
+                </div>
+            </div>
+    </div></a>
+<!-- 第八个小块         -->
+    <a href=""><div class="b3">
+        <img src="img/body/body-rwsy/body-rwsy8.png" >
+            <div class="b4">
+                    <span class="b5">艺术设计鉴赏</span>
+                <div class="b6">
+                   	<span class="b6-1">深圳大学/</span>
+                   	<span class="b6-2">涂星</span>
+                </div>
+            </div>
+    </div></a>
+</div>  </div>
+<!-- 灰色背景结束 -->
+</div>
+
+<!-- 底部横条 -->
+<div id="b-main">	
+
+     <div id="footer">
+	<div class="c1">
+		<a href=""><img src="img/footer/footer-logo.png" alt=""></a>
+	</div>
+<!-- 第一行 -->
+	<ul id="c2">
+		<li><a href="">关于我们</a></li>
+		<li><a href="">服务条款</a></li>
+		<li><a href="">联系我们</a></li>
+		<li><a href="">机构管理</a></li>
+		<li><a href="">免责声明</a></li>
+	</ul>
+	<p id="c5">
+		
+		<a href=""class="c6"><img src="img/footer/footer-qq.png">在线QQ客服</a>
+		<span class="c7">客服工作时间：周一至周五09:30-18:30</span>
+	</p>
+<!-- 第二行 -->
+
+<p id="c3">
+	<a href="">粤ICO备16050337号-1</a>
+	<span style="margin: 0 5px;font-size: 12px;
+line-height: 1.8;color: #908f8f;">丨</span>
+    
+	<a href="">
+		<img src="img/footer/footer-gh.png" alt="">
+		粤公网安备44030502001269号
+	</a>
+    <span style="margin: 0 5px;font-size: 12px;
+line-height: 1.8;color: #908f8f;">丨</span>
+	<a href="">
+		增值电信业务经营许可证B2-20173213
+	</a>
+</p>
+<!-- 第三行 -->
+<p id="c4">
+	Copyright © 2015- 2018深圳市优课在线教育有限公司 
+</p>
+
+
+
+
+
+
+     </div>
+
+
+
+</div>
+
+</div>
+</body>
+</html>

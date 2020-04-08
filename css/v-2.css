@@ -1,0 +1,213 @@
+@charset "utf-8";
+/* CSS Document */
+/*灰色背景部分*/
+
+#sub-b0{
+width: 1120px;
+height: 645px;
+margin-right: 85px;
+margin-left: 85px;
+}
+/*顶部提示条*/
+#sub-b0 .b1{
+width: 1120px;
+height: 36px;
+padding-top: 60px;
+padding-bottom: 15px;
+font-size: 24px;
+font-weight: 400;
+color: #404040;
+}
+/*下部主体部分*/
+#sub-b0 .b2{
+	width: 1150px;
+	height: 540px;
+		display: inline-block;
+		float: left;
+}
+/*图片*/
+#sub-b0 .b0{
+	float:left;
+	width: 240px;
+	height: 530px;
+	display: inline;
+}
+/*区域块里的每个小盒子*/
+#sub-b0 .b3 {
+width: 200px;
+height: 256px;
+float: left;
+border:1px solid rgb(230,230,230);
+margin-left: 20px;
+margin-bottom: 20px;
+display: inline;
+background-color: #fff;
+}
+/*盒子图片*/
+#sub-b0 .b3 img{
+width: 200px;
+height: 165px;
+}
+/*字体包含框架*/
+#sub-b0 .b3 .b4{
+ width: 168px;
+ height: 90px;
+ margin-left: 15px;
+ margin-right: 15px;
+}
+/*第一行字体*/
+#sub-b0 .b3 .b4 .b5{
+color: #404040;
+font-size: 15px;
+font-weight: 400;
+margin-bottom: 8px;
+line-height: 18px;
+max-height: 36px;
+overflow: hidden;
+display: -webkit-box;
+margin-top: 10px;
+
+}
+/*第二行字体框架*/
+#sub-b0 .b3 .b4 .b6{
+width: 233px;
+height: 22px;
+
+}
+#sub-b0 .b3 .b4 .b6 .b6-1{
+   color: #999;
+   font-size: 12px;
+   line-height: 18px;
+}
+#sub-b0 .b3 .b4 .b6 .b6-2{
+	color: #999;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+/*浮动效果*/
+.b3:hover{
+            transition:border linear .2s,
+					box-shadow linear .5s;
+		box-shadow:5px 5px 10px 2px rgba(0,0,0,.3);
+}
+/*底部div*/
+
+#footer{
+	width: 1287px;
+	height: 74px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+/*logo图片*/
+#footer .c1{
+width: 147px;
+height: 50px;
+margin-top: 12px;
+margin-right: 25px;
+position: relative;
+left: 85px;
+display: inline;
+float: left;
+}
+/*第一行ul标签*/
+ul#c2{
+width: 600px;
+height: 21px;
+display: block;
+margin-bottom: 5px;
+margin-left: 100px;
+text-align: center;
+float: left;
+}
+ul#c2 li{
+	height: 21px;
+	width: 56px;
+	text-align: center;
+	padding: 0 0px;
+	float: left;
+	list-style-type: none;
+	padding-right: 35px;
+}
+ul#c2 li a{
+	height: 21px;
+	width: 56px;
+	font-size: 14px;
+	display: block;
+	line-height: 21px;
+	color: rgb(160,160,160);
+	text-decoration: none;
+	transition-color 4s;
+   	transition-property:color;
+   	 transition-duration: 0.4s;
+   	 transition-timing-function: ease;
+   	 transition-delay: 0s;
+}
+ul#c2 li a:hover{
+	color:#fff;
+}
+
+#c3{
+	width: 600px;
+	height: 26px;
+	float: left;
+	margin-left: 100px;
+}
+#c3 a{
+	color: rgb(160,160,160);
+    text-decoration: none;
+    font-size: 12px;
+    	transition-color 4s;
+   	transition-property:color;
+   	 transition-duration: 0.4s;
+   	 transition-timing-function: ease;
+   	 transition-delay: 0s;
+   	 height: 21px;
+}
+#c3 a:hover{
+	color:#fff;
+}
+#c4{
+	width: 600px;
+	height: 26px;
+	float: left;
+	margin-left: 100px;
+	color: rgb(160,160,160);
+    text-decoration: none;
+    font-size: 12px;
+
+}
+
+#c5{
+	width: 215px;
+	height: 60px;
+	float: right;
+	position: relative;
+	right: 65px;
+}
+#c5 .c6{
+position: relative;
+font-size: 16px;
+top: 2px;
+	color: rgb(160,160,160);
+    text-decoration: none;
+position: relative;
+left: 50px;
+}
+/*qqlogo*/
+#c5 .c6 img{
+position: relative;
+top: 5px;
+}
+#c5 .c7
+{
+	font-size: 12px;
+	color: rgb(160,160,160);
+    text-decoration: none;
+    display: block;
+    margin-top: 10px;
+}
+#c5 .c6:hover{
+	color: #fff;
+}
+
